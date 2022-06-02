@@ -1,0 +1,141 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: #d8dbdb;
+    color: rgb(255, 255, 255);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.img-cont{
+    width: 70vw;
+    background-color: #252f3d;
+    margin: auto;
+    padding: 30px ;
+    margin-top: 10px;
+    border-radius: 30px;
+    direction: rtl;
+}
+.back-icon{
+    align-items: center;
+    display: flex;
+    width: 75px;
+    justify-content: space-between;
+    font-size: clamp(17px,2vw,22px);
+    padding: 4px 8px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.back-icon:hover{
+    border: 1px solid #d8dbdb;
+}
+.back{
+    margin-bottom: 4px;
+}
+.spand-line{
+    padding: 5px;
+    display: block;
+    width: 80%;
+    border-bottom:1px solid rgb(153, 153, 153);
+}
+/*  */
+/* .text1{
+    display: inline;
+} */
+.tet1{
+    font-size: clamp(13px,2vw,18px);
+    position: absolute;
+    right: 20%;
+    color: rgb(0, 255, 200);
+}
+.add-adver-img{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    column-gap: 30px;
+    row-gap: 15px;
+}
+.adver-img-1{
+    margin-top: 20px;
+    height:200px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+.adver-img-cont{
+    height: 100%;
+}
+.adver-img-cont img{
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+.adver-img-delet{
+    position: absolute;
+    top: 70%;
+}
+
+.btn-delet{
+    margin-top: 10px;
+    margin-right: 25px;
+    padding: 2px;
+    font-size: clamp(13px,2vw,20px);
+}
+.btn-chan{
+    margin-right: 10px;
+}
+.next-butn{
+    width: 50%;
+    margin: auto;
+}
+.add-picture{
+    margin: 1px;
+    width: 100px;
+    font-size: clamp(14px,2vw,20px);
+    background-color: #252f3d;
+}
+.next-btn{
+    padding: 3px;
+    font-size: clamp(13px,2vw,20px);
+    margin-right: 200px;
+    background-color: #252f3d;
+}
+/* تعديل */
+.modfile-img{
+    text-align: center;
+}
+.next-btn1{
+    border-radius: 5px;
+    color: #d8dbdb;
+    border: 1px solid #d8dbdb;
+    padding: 3px;
+    /* margin: 2px; */
+    cursor: pointer;
+    background-color: #252f3d;
+}
+@media  (max-width: 600px){
+    .back-icon{
+        width: 60px;
+    }
+    .add-adver-img{
+        grid-template-columns: 1fr 1fr ;
+        column-gap: 10px;
+        row-gap: 10px;
+    }
+    .adver-img-1{
+        height:100px;
+    }
+    .add-picture{
+        width: 70px;
+        font-size: clamp(14px,2vw,20px);
+    
+    }
+    .text{
+        position: absolute;
+        top: 25%;
+        right: 20%;
+    }
+    .next-btn{
+        margin-right: 105px;
+    }
+}
